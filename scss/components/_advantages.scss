@@ -1,0 +1,41 @@
+.advantages {
+  &__body {
+    padding: 138px 363px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 171px;
+    @media screen and (max-width: 1605px) {
+      gap: 100px;
+    }
+    @media screen and (max-width: 1464px) {
+      gap: 60px;
+      padding: 80px 168px;
+    }
+    @media screen and (max-width: 1024px) {
+      gap: 35px;
+      padding: 40px 40px;
+    }
+    @media screen and (max-width: 490px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  &-item {
+    text-align: center;
+    &__image {
+      max-width: 84px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.advantages-item {
+  cursor: pointer;
+  transition: transform 500ms ease;
+  &:hover {
+    background: $color-white;
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+  }
+}

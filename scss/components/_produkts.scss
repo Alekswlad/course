@@ -1,0 +1,106 @@
+.produkts {
+  &__body {
+    padding: 0px 122px;
+    @media screen and (max-width: 1450px) {
+      padding: 0px 100px;
+    }
+    @media screen and (max-width: 1200px) {
+      padding: 0px 60px;
+    }
+    @media screen and (max-width: 1024px) {
+      padding: 0px 30px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 0px 15px;
+    }
+    @media screen and (max-width: 450px) {
+      padding: 0px 5px;
+    }
+  }
+
+  &__text {
+    padding-top: 66px;
+    text-align: center;
+    @media screen and (max-width: 1200px) {
+      padding-top: 40px;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: $fs-36;
+    line-height: 32px;
+    color: $color-black;
+  }
+  &__border {
+    max-width: 127px;
+    margin: 0px auto;
+    margin-top: 20px;
+    border: 4px solid $color-orange;
+  }
+  &__subtitle {
+    padding-top: 25px;
+    text-align: center;
+    font-weight: 500;
+    font-size: $fs-18;
+    line-height: 24px;
+    color: $color-gray;
+    @media screen and (max-width: 1024px) {
+      margin: 0px auto;
+      width: 80%;
+    }
+    @media screen and (max-width: 600px) {
+      font-size: $fs-22;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: $fs-24;
+      line-height: 24px;
+    }
+    @media screen and (max-width: 390px) {
+      font-size: $fs-24;
+    }
+  }
+  &__content {
+    padding-top: 37px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 31px;
+    @media screen and (max-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    @media screen and (max-width: 920px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 490px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 395px));
+      gap: 5px;
+    }
+  }
+  &__card {
+    cursor: pointer;
+    transition: transform 500ms ease;
+    &:hover {
+      background: $color-white;
+      transform: translateY(-5px);
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    }
+    &__card-title {
+      color: $color-orange;
+    }
+  }
+  &__card-title {
+    padding: 22px 0px;
+    text-align: center;
+    font-weight: 500;
+    font-size: $fs-18;
+    line-height: 24px;
+    color: $color-black;
+  }
+}
+
+.produkts-card__icon {
+  width: 100%;
+}

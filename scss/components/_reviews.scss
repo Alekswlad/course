@@ -1,0 +1,101 @@
+.reviews {
+  background: url(../Img/background.png);
+  height: 885px;
+  position: relative;
+  margin-top: 100px;
+  @media screen and (max-width: 700px) {
+    height: 1200px;
+  }
+  &__background-top {
+    width: 100%;
+    top: -2px;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 700px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  &__text {
+    padding-top: 113px;
+    padding-left: 331px;
+    @media screen and (max-width: 1650px) {
+      padding-top: 80px;
+      padding-left: 180px;
+    }
+    @media screen and (max-width: 1200px) {
+      padding-top: 20px;
+      padding-left: 60px;
+    }
+    @media screen and (max-width: 1024px) {
+      padding: 20px;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: $fs-20;
+    line-height: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $color-black;
+  }
+  &__subtitle {
+    padding-top: 46px;
+    font-weight: 500;
+    font-size: $fs-30;
+    line-height: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: $color-orange;
+  }
+  &__stars {
+    padding-top: 24px;
+    padding-right: 4px;
+  }
+  &__message {
+    padding-top: 24px;
+    padding-right: 100px;
+    font-weight: 500;
+    font-size: $fs-26;
+    line-height: 44px;
+    color: $color-gray;
+    @media screen and (max-width: 1024px) {
+      padding: 20px;
+    }
+  }
+  &__user {
+    padding-top: 23px;
+    font-weight: 600;
+    font-size: $fs-16;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: $color-orange;
+  }
+  &__arrows {
+    padding-top: 32px;
+  }
+  &__arrows img {
+    cursor: pointer;
+    transition: transform 500ms ease;
+    &:hover {
+      background: $color-white;
+      transform: translateY(-1px) scale(1.1);
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    }
+  }
+  &__background-bottom {
+    position: absolute;
+    width: 100%;
+    bottom: -1px;
+  }
+}
+.reviews__imeges {
+  padding-top: 73px;
+  padding-left: 97px;
+  @media screen and (max-width: 1200px) {
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+}

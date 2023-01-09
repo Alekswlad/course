@@ -1,0 +1,101 @@
+.hero-page {
+  background-image: url("../Img/bgone.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 641px;
+  position: relative;
+  &__content {
+    position: relative;
+    top: 25%;
+    left: 55%;
+    width: 30%;
+    @media screen and (max-width: 1450px) {
+      top: 5%;
+      left: 67%;
+    }
+    @media screen and (max-width: 1024px) {
+      top: 5%;
+      left: 15%;
+    }
+    @media screen and (max-width: 768px) {
+      width: 45%;
+    }
+    @media screen and (max-width: 450px) {
+      width: 55%;
+    }
+    @media screen and (max-width: 375px) {
+      width: 65%;
+    }
+  }
+  &__company-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fs-26;
+    line-height: 42px;
+    color: $color-orange;
+    @media screen and (max-width: 1450px) {
+      font-size: $fs-20;
+      line-height: 35px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: $fs-18;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: $fs-20;
+    }
+  }
+  &__title {
+    padding-top: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $fs-56;
+    line-height: 72px;
+    color: $color-black;
+    @media screen and (max-width: 1450px) {
+      font-size: $fs-40;
+      line-height: 51px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: $fs-30;
+      line-height: 40px;
+    }
+  }
+  &__subtitle {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: $fs-16;
+    line-height: 29px;
+    color: $color-gray;
+    @media screen and (max-width: 768px) {
+      font-size: $fs-18;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: $fs-20;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: $fs-24;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    margin-top: 38px;
+    color: $color-white;
+    transition: transform 600ms ease;
+    &:active {
+      color: $color-black;
+      background: #fff8f6;
+      border: 2px solid $color-orange;
+      transform: translateY(2px);
+    }
+    @media screen and (max-width: 1450px) {
+      margin-top: 20px;
+    }
+  }
+  &__background-bottom {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+  }
+}

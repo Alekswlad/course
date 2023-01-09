@@ -1,0 +1,22 @@
+* {
+  font-family: "Jost";
+}
+body {
+  width: 100%;
+}
+.btn {
+  background: #f6623e;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 14px 25px;
+  text-transform: uppercase;
+  transition: transform 500ms ease;
+  @media screen and (max-width: 1300px) {
+    padding: 10px 15px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 5px 10px;
+  }
+}

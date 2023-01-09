@@ -1,0 +1,92 @@
+.produkts-list {
+  &__body {
+    @extend .produkts__body;
+    padding-top: 136px;
+  }
+  &__title {
+    @extend .produkts__title;
+    text-align: center;
+  }
+  &__content {
+    padding-top: 58px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 31px;
+    margin-bottom: 60px;
+    @media screen and (max-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    @media screen and (max-width: 700px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 490px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  &__card {
+    cursor: pointer;
+    transition: transform 500ms ease;
+    &:hover {
+      background: $color-white;
+      transform: translateY(-5px);
+      box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    }
+  }
+  &__card-title {
+    padding-top: 22px;
+    text-align: center;
+    font-weight: 500;
+    font-size: $fs-14;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: $color-black;
+  }
+  &__card p {
+    padding: 7px 0px;
+    text-align: center;
+  }
+  &__price {
+    font-weight: 400;
+    font-size: $fs-14;
+    line-height: 20px;
+    color: $color-orange;
+  }
+  &__old-price {
+    padding-left: 21px;
+    font-weight: 400;
+    font-size: $fs-14;
+    line-height: 20px;
+    text-decoration-line: line-through;
+    color: #828181;
+  }
+  &__btn {
+    margin: 0 auto;
+    display: block;
+    padding: 18px 45px;
+    background: $color-white;
+    @include border(2px, $color-orange);
+    font-weight: 500;
+    font-size: $fs-16;
+    line-height: 25px;
+    text-align: center;
+    color: $color-black;
+    cursor: pointer;
+    &:active {
+      color: $color-black;
+      background: $color-orange;
+      border: 2px solid $color-orange;
+      transform: translateY(2px);
+    }
+    @media screen and (max-width: 1024px) {
+      padding: 10px 25px;
+    }
+    @media screen and (max-width: 900px) {
+      padding: 8px 20px;
+      margin-top: 14px;
+    }
+  }
+}

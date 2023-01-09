@@ -1,0 +1,70 @@
+.news {
+  &__body {
+    padding: 119px 322px 0px 322px;
+    @media screen and (max-width: 1700px) {
+      padding: 90px 222px 0px 222px;
+    }
+    @media screen and (max-width: 1450px) {
+      padding: 60px 180px 0px 180px;
+    }
+    @media screen and (max-width: 1200px) {
+      padding: 50px 90px 0px 90px;
+    }
+    @media screen and (max-width: 950px) {
+      padding: 30px 60px 0px 60px;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 20px 30px 0px 30px;
+    }
+  }
+  &-title {
+    @extend .produkts__title;
+    text-align: center;
+  }
+  &__card {
+    padding-top: 46px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    @media screen and (max-width: 500px) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+  &__date {
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: $color-orange;
+  }
+  &__title {
+    padding-top: 2px;
+    font-weight: 500;
+    font-size: $fs-22;
+    line-height: 44px;
+    text-align: center;
+    color: $color-black;
+  }
+  &__short-text {
+    padding-top: 2px;
+    max-width: 389px;
+    font-weight: 400;
+    font-size: $fs-16;
+    line-height: 30px;
+    text-align: center;
+    color: #828181;
+    margin-bottom: 21px;
+  }
+  &__btn {
+    margin: 0px auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 500ms ease;
+    &:active {
+      transform: translateY(2px);
+      background: #8a331d;
+    }
+  }
+}
